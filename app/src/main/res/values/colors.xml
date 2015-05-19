@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hover_normal">#FAFAFA</color>
+    <color name="hover_pressed">#F5F5F5</color>
+
+</resources>

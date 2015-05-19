@@ -15,4 +15,10 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="like_button">Like</string>
+    <string name="dislike_button">Dislike</string>
+    <string name="title_activity_selected_image">SelectedImage</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>

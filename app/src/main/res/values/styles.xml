@@ -5,4 +5,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="ClotherNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme">
+        <item name="colorPrimary">#DA781F</item>
+        <item name="colorPrimaryDark">#BE3803</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="singleAccount">true</item>
+    </style>
+
 </resources>
