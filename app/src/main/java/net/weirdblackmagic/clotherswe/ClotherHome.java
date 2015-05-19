@@ -16,9 +16,14 @@ import android.widget.Toast;
 
 import com.melnykov.fab.FloatingActionButton;
 
+import java.util.List;
+
 import de.ovgu.cse.se.ClotherAPI.ConfigurationContext;
 import de.ovgu.cse.se.ClotherAPI.IObjectProvider;
 import de.ovgu.cse.se.ClotherAPI.ObjectProviderFactory;
+import de.ovgu.cse.se.ClotherAPI.exceptions.PictureNotFoundException;
+import de.ovgu.cse.se.ClotherAPI.exceptions.UserNotAuthenticatedException;
+import de.ovgu.cse.se.ClotherAPI.models.Picture;
 
 
 /**
@@ -84,8 +89,6 @@ public class ClotherHome extends Fragment {
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(view.getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
-
-
 
         // specify an adapter (see also next example)
         mAdapter = new TimelineAdapter(new Integer[] {

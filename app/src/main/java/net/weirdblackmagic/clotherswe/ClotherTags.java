@@ -1,12 +1,11 @@
 package net.weirdblackmagic.clotherswe;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ListView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,7 +20,6 @@ public class ClotherTags extends Fragment {
      *
      * @return A new instance of fragment ClotherTags.
      */
-    // TODO: Rename and change types and number of parameters
     public static ClotherTags newInstance() {
         ClotherTags fragment = new ClotherTags();
         Bundle args = new Bundle();
@@ -39,10 +37,14 @@ public class ClotherTags extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        final View view = inflater.inflate(R.layout.fragment_clother_tags, container, false);
+
+        // TODO get real tags
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_clother_tags, container, false);
+        return view;
     }
 
 

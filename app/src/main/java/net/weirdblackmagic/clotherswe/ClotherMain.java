@@ -16,7 +16,7 @@ import it.neokree.materialnavigationdrawer.elements.MaterialSection;
 
 
 public class ClotherMain extends MaterialNavigationDrawer {
-    
+
     Boolean result;
     MaterialAccount account;
 
