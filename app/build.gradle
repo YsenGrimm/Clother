@@ -31,4 +31,5 @@ dependencies {
 
     compile 'it.neokree:MaterialNavigationDrawer:1.3.3'
     compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'pro.alexzaitsev:freepager:1.0.1'
 }

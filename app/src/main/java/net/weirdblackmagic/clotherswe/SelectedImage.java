@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -19,6 +20,10 @@ public class SelectedImage extends ActionBarActivity {
         id = getIntent().getExtras().getString("id");
         TextView text = (TextView) findViewById(R.id.id_text);
         text.setText(id);
+
+        ImageView image = (ImageView) findViewById(R.id.imageView);
+        image.setImageResource(ClotherHome.newInstance().images[Integer.parseInt(id)]);
+
     }
 
     @Override

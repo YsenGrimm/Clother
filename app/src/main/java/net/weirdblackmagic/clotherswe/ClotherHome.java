@@ -36,8 +36,22 @@ import de.ovgu.cse.se.ClotherAPI.models.Picture;
 public class ClotherHome extends Fragment {
 
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
+    public RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    public Integer[] images = new Integer[] {
+            R.drawable.otter1,R.drawable.cat,
+            R.drawable.otter2,R.drawable.otter3,
+            R.drawable.otter4,R.drawable.cat,
+            R.drawable.otter1,R.drawable.cat,
+            R.drawable.otter2,R.drawable.otter3,
+            R.drawable.otter4,R.drawable.cat,
+            R.drawable.otter1,R.drawable.cat,
+            R.drawable.otter2,R.drawable.otter3,
+            R.drawable.otter4,R.drawable.cat,
+            R.drawable.otter1,R.drawable.cat,
+            R.drawable.otter2,R.drawable.otter3,
+            R.drawable.otter4
+    };
 
     /**
      * Use this factory method to create a new instance of
@@ -91,26 +105,7 @@ public class ClotherHome extends Fragment {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new TimelineAdapter(new Integer[] {
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-                R.drawable.cat,R.drawable.cat,
-        });
+        mAdapter = new TimelineAdapter(images);
         mRecyclerView.setAdapter(mAdapter);
 
         return view;
